@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  background: url('./assets/purple.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+/*LOGIN BUTTON*/
+.btn.blue {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+}
+
+.btn.blue::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(90deg, #00eaff, #0072ff, #00ffff);
+  border-radius: inherit;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.9;
+  transition: 0.4s ease;
+}
+
+.btn.blue:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(90deg, #00eaff, #008cff);
+  box-shadow: 0 0 35px rgba(0, 198, 255, 0.8),
+              0 0 70px rgba(0, 198, 255, 0.6);
+}
+
+.btn.blue:hover::before {
+  filter: blur(25px);
+  opacity: 1;
+}
+/*SIGNUP BUTTON*/
+.btn.pink {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff32c1, #ff00c8);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255, 50, 193, 0.4);
+}
+
+.btn.pink::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(90deg, #ff0099, #ff4dc4, #ff00a6);
+  border-radius: inherit;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.9;
+  transition: 0.4s ease;
+}
+
+.btn.pink:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(90deg, #ff0099, #ff4dc4);
+  box-shadow: 0 0 35px rgba(255, 50, 193, 0.8),
+              0 0 70px rgba(255, 50, 193, 0.6);
+}
+
+.btn.pink:hover::before {
+  filter: blur(25px);
+  opacity: 1;
+}
+
+/*loginle signupun containeri*/
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 350px;
+  text-align: center;
+  color: #fff;
+}
+
+.auth-box h2 {
+  margin-bottom: 1.5rem;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.link {
+  color: #5100ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
