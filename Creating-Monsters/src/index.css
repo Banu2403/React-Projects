@@ -1,0 +1,52 @@
+body {
+  background: url('./assets/Background.jpg') no-repeat center center/cover;
+
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.pink {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn.pink:hover {
+  box-shadow: 0 0 20px #ff6dbd;
+}
+
+.btn.blue {
+  background-color: #6dbdff;
+  color: white;
+}
+
+.btn.blue:hover {
+  box-shadow: 0 0 20px #6dbdff;
+}
