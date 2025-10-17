@@ -1,0 +1,20 @@
+.angle-slider {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.angle-slider input[type="range"] {
+  width: 80%;
+  accent-color: #007bff;
+}
+
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
